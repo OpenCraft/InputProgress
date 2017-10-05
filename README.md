@@ -3,6 +3,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/InputProgress.svg?style=flat)](http://cocoapods.org/pods/InputProgress)
 [![License](https://img.shields.io/cocoapods/l/InputProgress.svg?style=flat)](http://cocoapods.org/pods/InputProgress)
 ![Build](https://api.travis-ci.org/OpenCraft/InputProgress.svg?branch=master)
+[![Documentation](docs/badge.svg)](https://opencraft.github.io/InputProgress/)
 
 This library provides a way to give feedback to the user regarding his progress on an exaustive form flow. A customizable progress bar can be added both to the selected UITextFields as well as on the view they are being presented.
 
@@ -29,7 +30,7 @@ $ pod install InputProgress
 
 ## Usage
 
-Take a look at the Example application provided. It demonstrates all the features of this library.
+Take a look at the Example application provided. It demonstrates all the features of this library. Also, don't forget to check the [Documentation](https://opencraft.github.io/InputProgress/).
 
 
 ## License
