@@ -1,0 +1,6 @@
+framework module InputProgress {
+  umbrella header "InputProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}

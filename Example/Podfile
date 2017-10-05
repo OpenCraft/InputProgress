@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'InputProgress_Example' do
+  pod 'InputProgress', :path => '../'
+
+  target 'InputProgress_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
