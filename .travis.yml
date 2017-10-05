@@ -1,5 +1,6 @@
-language: swift
 osx_image: xcode9
+language: swift
 
-script:
-- xctool clean build -workspace Example/InputProgress.xcworkspace -scheme InputProgress-Example -sdk iphonesimulator | xcpretty
+xcode_workspace: "Example/InputProgress.xcworkspace
+xcode_scheme: "InputProgress-Example"
+xcode_sdk: "iphonesimulator"
