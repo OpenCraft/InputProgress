@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InputProgress Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/InputProgress" class="dashAnchor"></a>
+    <a title="InputProgress Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InputProgress Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InputProgress Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InputProgress Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/InputProgress.html">InputProgress</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InputProgress</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">InputProgress</span></code></pre>
+
+                </div>
+              </div>
+            <p>Sets up and handle both the bottom view and <code>UITextField</code> bars</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Private Properties" class="dashAnchor"></a>
+                <a href="#/Private%20Properties">
+                  <h3 class="section-name">Private Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC17viewBarIdentifier33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLSiv"></a>
+                    <a name="//apple_ref/swift/Property/viewBarIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC17viewBarIdentifier33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLSiv">viewBarIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internal identifier tag for the bottom view bar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">viewBarIdentifier</span> <span class="o">=</span> <span class="mi">974216</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC22textfieldBarIdentifier33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLSiv"></a>
+                    <a name="//apple_ref/swift/Property/textfieldBarIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC22textfieldBarIdentifier33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLSiv">textfieldBarIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internal identifier tag for the <code>UITextField</code> accessory view progress bars</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">textfieldBarIdentifier</span> <span class="o">=</span> <span class="mi">395629</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC34placeholderAccessoryViewIdentifier33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLSiv"></a>
+                    <a name="//apple_ref/swift/Property/placeholderAccessoryViewIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC34placeholderAccessoryViewIdentifier33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLSiv">placeholderAccessoryViewIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Internal identifier for an auxiliar accessory view necessary when there&rsquo;s no accessory view on the <code>UITextField</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">placeholderAccessoryViewIdentifier</span> <span class="o">=</span> <span class="mi">822563</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/Public Properties" class="dashAnchor"></a>
+                <a href="#/Public%20Properties">
+                  <h3 class="section-name">Public Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC14presentingViewSo6UIViewCv"></a>
+                    <a name="//apple_ref/swift/Property/presentingView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC14presentingViewSo6UIViewCv">presentingView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The view which the bottom progress bar should be displayed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">presentingView</span><span class="p">:</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC10textFieldsSaySo11UITextFieldCGv"></a>
+                    <a name="//apple_ref/swift/Property/textFields" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC10textFieldsSaySo11UITextFieldCGv">textFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>UITextField</code> objects that should display the progress bars</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">textFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">UITextField</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC8progress12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/progress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC8progress12CoreGraphics7CGFloatVv">progress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current progress to be displayed. This value should be between 0 and 1. The default value is 0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC16progressBarColorSo7UIColorCv"></a>
+                    <a name="//apple_ref/swift/Property/progressBarColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC16progressBarColorSo7UIColorCv">progressBarColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The fill color of the progress bar. The default value is a light blue</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">progressBarColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="err">#</span><span class="nf">colorLiteral</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">0.3294117647</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">0.6392156863</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC17progressBarHeight12CoreGraphics7CGFloatVv"></a>
+                    <a name="//apple_ref/swift/Property/progressBarHeight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC17progressBarHeight12CoreGraphics7CGFloatVv">progressBarHeight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The height of the progress bar. The default value is 5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">progressBarHeight</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">5</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC26shouldDisplayBottomViewBarSbv"></a>
+                    <a name="//apple_ref/swift/Property/shouldDisplayBottomViewBar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC26shouldDisplayBottomViewBarSbv">shouldDisplayBottomViewBar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determines if the bottom progress bar should be displayed or not. The default value is true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">shouldDisplayBottomViewBar</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init"></a>
+                <a name="//apple_ref/swift/Section/Init" class="dashAnchor"></a>
+                <a href="#/Init">
+                  <h3 class="section-name">Init</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAACABSo6UIViewC14presentingView_SaySo11UITextFieldCG10textFieldstcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(presentingView:textFields:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAACABSo6UIViewC14presentingView_SaySo11UITextFieldCG10textFieldstcfc">init(presentingView:textFields:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Class initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">presentingView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="nv">textFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">UITextField</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20Setup%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Public Setup Methods" class="dashAnchor"></a>
+                <a href="#/Public%20Setup%20Methods">
+                  <h3 class="section-name">Public Setup Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC05setupB3BarSo6UIViewCSC6CGRectV5frame_tF"></a>
+                    <a name="//apple_ref/swift/Method/setupProgressBar(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC05setupB3BarSo6UIViewCSC6CGRectV5frame_tF">setupProgressBar(frame:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup the progress bar view. For a custom progress abr, this
+method should be overriden</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupProgressBar</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame of the progress bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color of the progress bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The progress bar <code>UIView</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC18setupBottomViewBarSo6UIViewCSC6CGRectV5frame_tF"></a>
+                    <a name="//apple_ref/swift/Method/setupBottomViewBar(frame:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC18setupBottomViewBarSo6UIViewCSC6CGRectV5frame_tF">setupBottomViewBar(frame:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup the bottom view progress bar. By default, this bar is
+the same as the accessory view progress bar. Override this method
+for the implementation of a different bar for the view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setupBottomViewBar</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIView</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The frame of the progress bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color of the progress bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The progress bar <code>UIView</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Private%20methods"></a>
+                <a name="//apple_ref/swift/Section/Private methods" class="dashAnchor"></a>
+                <a href="#/Private%20methods">
+                  <h3 class="section-name">Private methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InputProgressAAC14updateBarState33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLyyF"></a>
+                    <a name="//apple_ref/swift/Method/updateBarState()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InputProgressAAC14updateBarState33_6FB2B0BF550E49CF50DDF60EFA5CBA0CLLyyF">updateBarState()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the progress bar <code>UIView</code> on the bottom of the presentingView
+and on the top of each one of the textFields provided</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">updateBarState</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>progress</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>CGFloat</code> value between 0 and 1 representing
+the percentage of the progress bar to be filled</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/OpenCraft/InputProgress" target="_blank" rel="external">rottajuliano</a>. All rights reserved. (Last updated: 2017-10-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -7,37 +7,50 @@
 
 import UIKit
 
+/// Sets up and handle both the bottom view and `UITextField` bars
 public class InputProgress {
     
     // MARK: Private Properties
     
+    /// Internal identifier tag for the bottom view bar
     private let viewBarIdentifier = 974216
+    
+    /// Internal identifier tag for the `UITextField` accessory view progress bars
     private let textfieldBarIdentifier = 395629
+    
+    /// Internal identifier for an auxiliar accessory view necessary when there's no accessory view on the `UITextField`
     private let placeholderAccessoryViewIdentifier = 822563
     
     // MARK: Public Properties
     
+    /// The view which the bottom progress bar should be displayed
     public var presentingView: UIView
+    
+    /// The `UITextField` objects that should display the progress bars
     public var textFields: [UITextField]
     
+    /// The current progress to be displayed. This value should be between 0 and 1. The default value is 0
     public var progress: CGFloat = 0 {
         didSet {
             updateBarState()
         }
     }
     
+    /// The fill color of the progress bar. The default value is a light blue
     public var progressBarColor: UIColor = #colorLiteral(red: 0.3294117647, green: 0.6392156863, blue: 1, alpha: 1) {
         didSet {
             updateBarState()
         }
     }
     
+    /// The height of the progress bar. The default value is 5
     public var progressBarHeight: CGFloat = 5 {
         didSet {
             updateBarState()
         }
     }
     
+    /// Determines if the bottom progress bar should be displayed or not. The default value is true
     public var shouldDisplayBottomViewBar: Bool = true {
         didSet {
             updateBarState()
@@ -46,6 +59,7 @@ public class InputProgress {
     
     // MARK: Init
     
+    /// Class initializer
     public init(presentingView: UIView, textFields: [UITextField]) {
         self.presentingView = presentingView
         self.textFields = textFields
