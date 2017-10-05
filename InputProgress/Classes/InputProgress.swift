@@ -22,25 +22,25 @@ public class InputProgress {
     
     public var progress: CGFloat = 0 {
         didSet {
-            setProgress(progress)
+            updateBarState()
         }
     }
     
     public var progressBarColor: UIColor = #colorLiteral(red: 0.3294117647, green: 0.6392156863, blue: 1, alpha: 1) {
         didSet {
-            setProgress(progress)
+            updateBarState()
         }
     }
     
     public var progressBarHeight: CGFloat = 5 {
         didSet {
-            setProgress(progress)
+            updateBarState()
         }
     }
     
-    public var shouldDisplayBarView: Bool = true {
+    public var shouldDisplayBottomViewBar: Bool = true {
         didSet {
-            setProgress(progress)
+            updateBarState()
         }
     }
     
@@ -51,8 +51,7 @@ public class InputProgress {
         self.textFields = textFields
     }
     
-    // MARK: Public Methods
-    
+    // MARK: Public Setup Methods
     
     /// Setup the progress bar view. For a custom progress abr, this
     /// method should be overriden
@@ -61,25 +60,42 @@ public class InputProgress {
     ///   - frame: The frame of the progress bar
     ///   - color: The color of the progress bar
     /// - Returns: The progress bar `UIView`
-    private func setupProgressBar(frame: CGRect, color: UIColor) -> UIView {
+    func setupProgressBar(frame: CGRect) -> UIView {
         let progressView = UIView(frame: frame)
-        progressView.backgroundColor = color
+        progressView.backgroundColor = progressBarColor
         return progressView
     }
     
+    
+    /// Setup the bottom view progress bar. By default, this bar is
+    /// the same as the accessory view progress bar. Override this method
+    /// for the implementation of a different bar for the view.
+    ///
+    /// - Parameters:
+    ///   - frame: The frame of the progress bar
+    ///   - color: The color of the progress bar
+    /// - Returns: The progress bar `UIView`
+    func setupBottomViewBar(frame: CGRect) -> UIView {
+        let progressView = setupProgressBar(frame: frame)
+        return progressView
+    }
+    
+    // MARK: Private methods
     
     /// Adds the progress bar `UIView` on the bottom of the presentingView
     /// and on the top of each one of the textFields provided
     ///
     /// - Parameter progress: A `CGFloat` value between 0 and 1 representing
     /// the percentage of the progress bar to be filled
-    public func setProgress(_ progress: CGFloat) {
-        let progressBarWidth: CGFloat = progress * presentingView.bounds.width
+    private func updateBarState() {
+        let progressBarWidth: CGFloat = progress * presentingView.frame.width
         
         // Add the progress bar to the bottom of the the view
-        if shouldDisplayBarView {
-            let progressView = setupProgressBar(frame: CGRect(x: 0, y: presentingView.frame.height - progressBarHeight, width: progressBarWidth, height: progressBarHeight), color: progressBarColor)
-            presentingView.addSubview(progressView)
+        presentingView.viewWithTag(viewBarIdentifier)?.removeFromSuperview()
+        if shouldDisplayBottomViewBar {
+            let bottomBar = setupBottomViewBar(frame: CGRect(x: 0, y: presentingView.frame.height - progressBarHeight, width: progressBarWidth, height: progressBarHeight))
+            bottomBar.tag = viewBarIdentifier
+            presentingView.addSubview(bottomBar)
         }
         
         // Add the progress bar for each one of the text fields
@@ -107,9 +123,9 @@ public class InputProgress {
             textField.inputAccessoryView?.viewWithTag(textfieldBarIdentifier)?.removeFromSuperview()
             
             // Add the progress bar
-            let progressBar = setupProgressBar(frame: CGRect(x: 0, y: barOffset, width: progressBarWidth, height: progressBarHeight), color: progressBarColor)
+            let progressBar = setupProgressBar(frame: CGRect(x: 0, y: barOffset, width: progressBarWidth, height: progressBarHeight))
             progressBar.tag = textfieldBarIdentifier
-            textField.inputAccessoryView?.addSubview(setupProgressBar(frame: CGRect(x: 0, y: barOffset, width: progressBarWidth, height: progressBarHeight), color: progressBarColor))
+            textField.inputAccessoryView?.addSubview(progressBar)
         }
     }
 }

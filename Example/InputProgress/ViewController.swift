@@ -10,30 +10,51 @@ import UIKit
 import InputProgress
 
 class ViewController: UIViewController {
+    
+    // MARK: IBOutlets
 
     @IBOutlet weak var firstTextField: UITextField!
     @IBOutlet weak var secondTextField: UITextField!
+    @IBOutlet weak var thirdTextField: UITextField!
+    @IBOutlet weak var fourthTextField: UITextField!
     
-    @IBOutlet weak var txtField: UITextField!
-    @IBOutlet weak var accessoryTxtField: UITextField!
+    // MARK: Properties
+    
+   private var inputProgress: InputProgress?
+    
+    // MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let accessoryView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 40))
         accessoryView.backgroundColor = .green
-        accessoryTxtField.inputAccessoryView = accessoryView
+        fourthTextField.inputAccessoryView = accessoryView
         firstTextField.inputAccessoryView = accessoryView
         
-        let inputProgress = InputProgress(presentingView: view, textFields: [txtField, accessoryTxtField, firstTextField, secondTextField])
-        inputProgress.setProgress(0.3)
+        inputProgress = InputProgress(presentingView: view, textFields: [firstTextField, secondTextField, thirdTextField, fourthTextField])
+        inputProgress?.progress = 0.3
     }
+    
+    // MARK: Actions
     
     @IBAction func didTouchDismissKeyboard(_ sender: Any) {
         firstTextField.resignFirstResponder()
         secondTextField.resignFirstResponder()
-        txtField.resignFirstResponder()
-        accessoryTxtField.resignFirstResponder()
+        thirdTextField.resignFirstResponder()
+        fourthTextField.resignFirstResponder()
+    }
+    
+    @IBAction func didTouchRandomColor(_ sender: Any) {
+        inputProgress?.progressBarColor = UIColor(red: CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1.0)
+    }
+    
+    @IBAction func didTouchRandomPercentage(_ sender: Any) {
+        inputProgress?.progress = CGFloat(drand48())
+    }
+    
+    @IBAction func didTouchToggleViewBar(_ sender: Any) {
+        inputProgress?.shouldDisplayBottomViewBar = !(inputProgress?.shouldDisplayBottomViewBar ?? false)
     }
 }
 

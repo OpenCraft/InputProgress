@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,62 +21,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Without accessory view no predictive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVh-OJ-JuM">
-                                <rect key="frame" x="56" y="322" width="263" height="22"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Field without accessory view nor predictive" borderStyle="roundedRect" placeholder="Without accessory view no predictive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVh-OJ-JuM">
+                                <rect key="frame" x="17" y="187" width="342" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk0-JL-KQH">
-                                <rect key="frame" x="125.5" y="242" width="123" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk0-JL-KQH">
+                                <rect key="frame" x="17" y="231" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Dismiss Keyboard"/>
                                 <connections>
                                     <action selector="didTouchDismissKeyboard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ayF-E3-KxJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="With accessory view no predictive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-8g-7Pq">
-                                <rect key="frame" x="56" y="289" width="263" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Field with accessory view without predictive" borderStyle="roundedRect" placeholder="With accessory view no predictive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-8g-7Pq">
+                                <rect key="frame" x="17" y="142" width="342" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Without accessory view" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-dP-8wJ">
-                                <rect key="frame" x="56.5" y="213" width="263" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Field without accessory view" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7I-dP-8wJ">
+                                <rect key="frame" x="17" y="97" width="342" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="With accessory view" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMo-ZV-VXp">
-                                <rect key="frame" x="56.5" y="184" width="263" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Field with accessory view" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMo-ZV-VXp">
+                                <rect key="frame" x="17" y="52" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAt-9M-xy8">
+                                <rect key="frame" x="199" y="231" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Random Color"/>
+                                <connections>
+                                    <action selector="didTouchRandomColor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="o0C-rk-U5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phN-1m-4xC">
+                                <rect key="frame" x="199" y="277" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Random Percentage"/>
+                                <connections>
+                                    <action selector="didTouchRandomPercentage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Rmg-dC-om1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-Fk-wb7">
+                                <rect key="frame" x="0.0" y="277" width="191" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Toggle bottom view bar"/>
+                                <connections>
+                                    <action selector="didTouchToggleViewBar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="17Z-25-GXu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="uVh-OJ-JuM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="5K7-Ke-DDk"/>
-                            <constraint firstItem="QUJ-8g-7Pq" firstAttribute="width" secondItem="uVh-OJ-JuM" secondAttribute="width" id="6Q5-OQ-znX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uVh-OJ-JuM" secondAttribute="trailing" constant="40" id="93x-3V-4tY"/>
-                            <constraint firstItem="Gk0-JL-KQH" firstAttribute="top" secondItem="Y7I-dP-8wJ" secondAttribute="bottom" constant="8" id="DDn-Uy-yiN"/>
-                            <constraint firstItem="QUJ-8g-7Pq" firstAttribute="centerX" secondItem="uVh-OJ-JuM" secondAttribute="centerX" id="JJY-U1-E4m"/>
-                            <constraint firstItem="Y7I-dP-8wJ" firstAttribute="top" secondItem="iMo-ZV-VXp" secondAttribute="bottom" constant="8" id="JXX-tX-UW5"/>
-                            <constraint firstItem="Y7I-dP-8wJ" firstAttribute="width" secondItem="QUJ-8g-7Pq" secondAttribute="width" id="N17-xp-Uhf"/>
-                            <constraint firstItem="iMo-ZV-VXp" firstAttribute="width" secondItem="QUJ-8g-7Pq" secondAttribute="width" id="NBB-5h-rBc"/>
-                            <constraint firstItem="iMo-ZV-VXp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Qyk-qu-8Mp"/>
-                            <constraint firstItem="uVh-OJ-JuM" firstAttribute="top" secondItem="QUJ-8g-7Pq" secondAttribute="bottom" constant="12" id="bUP-gW-jVz"/>
-                            <constraint firstItem="Y7I-dP-8wJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="deg-S6-N6k"/>
-                            <constraint firstItem="uVh-OJ-JuM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="40" id="eLQ-yl-7G5"/>
-                            <constraint firstItem="Gk0-JL-KQH" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hkg-xD-nrX"/>
-                            <constraint firstItem="uVh-OJ-JuM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jdV-rK-Evw"/>
-                            <constraint firstItem="uVh-OJ-JuM" firstAttribute="top" secondItem="Gk0-JL-KQH" secondAttribute="bottom" constant="50" id="wi6-zA-P9d"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="accessoryTxtField" destination="QUJ-8g-7Pq" id="hwp-QW-Se5"/>
                         <outlet property="firstTextField" destination="iMo-ZV-VXp" id="U3i-EV-X96"/>
+                        <outlet property="fourthTextField" destination="uVh-OJ-JuM" id="ngJ-Oy-zfA"/>
                         <outlet property="secondTextField" destination="Y7I-dP-8wJ" id="gKM-ke-087"/>
-                        <outlet property="txtField" destination="uVh-OJ-JuM" id="Mq1-Bz-gE8"/>
+                        <outlet property="thirdTextField" destination="QUJ-8g-7Pq" id="Z2h-Pe-5bJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
