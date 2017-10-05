@@ -14,7 +14,6 @@ This library provides a way to give feedback to the user regarding his progress 
 ## Requirements
 
 - iOS 8.0+
-- Xcode 9.0+
 - Swift 3.2+
 
 
