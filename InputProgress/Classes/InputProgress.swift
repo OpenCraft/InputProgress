@@ -11,9 +11,9 @@ public class InputProgress {
     
     // MARK: Private Properties
     
-    private let viewBarIdentifier = 9742164358
-    private let textfieldBarIdentifier = 395629421
-    private let placeholderAccessoryViewIdentifier = 822563522
+    private let viewBarIdentifier = 974216
+    private let textfieldBarIdentifier = 395629
+    private let placeholderAccessoryViewIdentifier = 822563
     
     // MARK: Public Properties
     
