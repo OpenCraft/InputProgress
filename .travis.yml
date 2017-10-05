@@ -1,6 +1,5 @@
-osx_image: xcode9
 language: swift
-
-xcode_workspace: "Example/InputProgress.xcworkspace
+osx_image: xcode9
+xcode_workspace: "Example/InputProgress.xcworkspace"
 xcode_scheme: "InputProgress-Example"
 xcode_sdk: "iphonesimulator"
