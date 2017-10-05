@@ -3,10 +3,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/InputProgress.svg?style=flat)](http://cocoapods.org/pods/InputProgress)
 [![License](https://img.shields.io/cocoapods/l/InputProgress.svg?style=flat)](http://cocoapods.org/pods/InputProgress)
 
-A progress bar for the keyboard and its presenting view.
-![Demo](https://media.giphy.com/media/26FfdDh1F3iwS4hLq/giphy.gif)
-
 This library provides a way to give feedback to the user regarding his progress on an exaustive form flow. A customizable progress bar can be added both to the selected UITextFields as well as on the view they are being presented.
+
+
+## Demo
+
+![Demo](https://media.giphy.com/media/26FfdDh1F3iwS4hLq/giphy.gif)
 
 
 ## Requirements
